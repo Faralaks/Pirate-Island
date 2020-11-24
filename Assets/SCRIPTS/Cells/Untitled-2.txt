@@ -1,0 +1,7 @@
+                for (int i = 0; i != 2; i++)  {
+                    NewGold = Instantiate(Map.DropObj["gold"]);
+                    NewGold.transform.SetParent(transform);
+                    NewGold.name = "gold";
+                    NewGold.tag = "Drop";
+                    NewGold.transform.localPosition = new Vector3(0f, 0f, -0.05f * i - 0.1750005f);
+                }
